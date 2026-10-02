@@ -66,3 +66,38 @@
     <script src="script.js"></script>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VortexIA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <header>
+            <h1>VortexIA</h1>
+            <div class="controls">
+                <select id="languageSelect">
+                    <option value="ar-SA">العربية</option>
+                    <option value="fr-FR">Français</option>
+                    <option value="en-US">English</option>
+                </select>
+                <button id="voiceBtn">🎙️ تحدث</button>
+            </div>
+        </header>
+
+        <div class="chat-box" id="chatBox">
+            <div class="message bot-message">مرحباً بك في VortexIA! كيف يمكنني مساعدتك اليوم؟</div>
+        </div>
+
+        <div class="input-area">
+            <input type="text" id="userInput" placeholder="اكتب سؤالك هنا...">
+            <button id="sendBtn">إرسال</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
