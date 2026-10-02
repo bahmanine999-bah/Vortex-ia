@@ -1,0 +1,101 @@
+/* إعدادات عامة */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0f172a;
+    color: #f8fafc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    direction: rtl;
+    padding: 20px;
+}
+
+/* العنوان الرئيسي */
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #38bdf8;
+    margin-bottom: 20px;
+    text-shadow: 0 0 15px rgba(56, 189, 248, 0.3);
+}
+
+/* قائمة الملاحة والروابط */
+ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+ul li a {
+    color: #94a3b8;
+    text-decoration: none;
+    font-size: 0.95rem;
+    padding: 8px 16px;
+    border-radius: 8px;
+    background: #1e293b;
+    transition: all 0.3s ease;
+}
+
+ul li a:hover {
+    color: #ffffff;
+    background: #334155;
+}
+
+/* صندوق المحادثة والإدخال */
+.chat-container {
+    width: 100%;
+    max-width: 600px;
+    background: #1e293b;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    border: 1px solid #334155;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 14px 18px;
+    border-radius: 10px;
+    border: 1px solid #475569;
+    background-color: #0f172a;
+    color: #ffffff;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #38bdf8;
+}
+
+/* أزرار الإرسال */
+button, input[type="submit"] {
+    padding: 14px 24px;
+    background-color: #0284c7;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #0369a1;
+}
